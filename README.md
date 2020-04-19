@@ -5,6 +5,10 @@
 ![chart]( https://qurihara.github.io/zoomwebbrowser/img/chart.png)
 ![browse]( https://qurihara.github.io/zoomwebbrowser/img/browse.png)
 
+<img src="https://qurihara.github.io/zoomwebbrowser/img/text-e.png" height=320>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/text.png" height=320>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/chart.png" height=320>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/browse.png" height=320>
 
 English description is below.
 
