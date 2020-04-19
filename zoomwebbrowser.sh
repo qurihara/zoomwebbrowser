@@ -1,20 +1,33 @@
 #!/bin/sh
-if [ $# -ne 2 ]; then
-        echo "requires 2 arguments:
-        first argument: refresh rate (seconds)
-        second argument: URL to show
-        example: # ./zoom_bg_browser.sh 10 https://www.yahoo.co.jp"
+if [ $# -eq 0 ]; then
+        echo "./zoom_bg_browser.sh (url) (seconds-to-refresh)
+        first argument: URL to show
+        second argument (optional): refresh rate (seconds)
+        example: # ./zoomwebbrowser.sh https://www.yahoo.co.jp 10"
         exit 1
 fi
-echo "refresh rate: $1 second(s)"
-echo "URL: $2"
 
-TEST=`cat path.txt`
-echo "$TEST"
-INTERVAL=$1
-while true; do
-        /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --disable-gpu --screenshot --window-size=1920,1080 $2
+if [ $# -eq 1 ]; then
+        echo "URL: $1"
+        TEST=`cat path.txt`
+        echo "$TEST"
+        /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --disable-gpu --screenshot --window-size=1920,1080 $1
         mv screenshot.png "$TEST"
         osascript reset-video.scpt
-        sleep $INTERVAL
-done
+        exit 1
+fi
+
+if [ $# -eq 2 ]; then
+        echo "URL: $1"
+        echo "refresh rate: $2 second(s)"
+
+        TEST=`cat path.txt`
+        echo "$TEST"
+        INTERVAL=$2
+        while true; do
+            /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --disable-gpu --screenshot --window-size=1920,1080 $1
+            mv screenshot.png "$TEST"
+            osascript reset-video.scpt
+            sleep $INTERVAL
+        done
+fi
