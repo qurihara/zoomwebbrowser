@@ -26,7 +26,7 @@ Zoomは会議のホストなら画面共有によってどんなものでも写�
 ## English
 
 You can use your virtual background of zoom.us as a web browser.
-It renders the first page of the specified web site, with refreshed periodicaly if you want.
+It renders the first page of the specified web site, with refreshed periodically if you want.
 This means you can make your virtual background dynamic. Build your background with your favorite web design technologies.
 
 It works on mac terminals.
