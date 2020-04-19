@@ -12,9 +12,7 @@ Zoomは会議のホストなら画面共有によってどんなものでも写�
 クイックハックなので、mac専用で、CUIしかなく、更新頻度も現実的にはせいぜい10秒に１度程度と、それほど高くできません。
 皆さんとともに使い方を考えたり、よりよい実装にしていきたいです。
 
-リモートワークでZoomを使う機会が増えました。皆さん快適なビデオチャットライフを。
-
-VS_COVID19
+リモートワークでZoomを使う機会が増えました。皆さん快適なビデオチャットライフを。  VS_COVID19
 
 課題・TODOs：
 * 更新するときキーボード入力をシステムが代行してキーボードショートカットを発動しているので、その間ユーザのキーボード操作が邪魔される
@@ -52,7 +50,7 @@ This process tells the system the full path of the back ground image used in zoo
 
 Then run the system during a meeting when your video is on by:
 
-$ ./zoomwebbrowser_1.sh (url)
+$ ./zoomwebbrowser.sh (url)
 
 It takes a snapshot of (url) and refreshes your background with it. This is one time command.
 Give a permission to the scripts when asked.
