@@ -68,7 +68,7 @@ Press ctrl+c to stop.
 
 Examples:
 
-Display "I agree👍" or write a text with a parameter t:
+Display "I agree👍". You can rewrite any text with a parameter t in the url:
 
 $ ./zoomwebbrowser.sh https://qurihara.github.io/zoomwebbrowser/type.html?t=I%20agree%F0%9F%91%8D
 
