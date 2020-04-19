@@ -68,7 +68,15 @@ Press ctrl+c to stop.
 
 Examples:
 
+Display "I agree👍" or write a text with a parameter t:
+
 $ ./zoomwebbrowser.sh https://qurihara.github.io/zoomwebbrowser/type.html?t=I%20agree%F0%9F%91%8D
+
+Display a website:
+
+$ ./zoomwebbrowser.sh https://www.unryu.org/
+
+Display a chart and refresh every 10 seconds:
 
 $ ./zoomwebbrowser.sh https://www.chartjs.org/samples/latest/charts/doughnut.html 10
 
