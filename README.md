@@ -1,14 +1,9 @@
 # Zoom Web Browser
 
-![text-e]( https://qurihara.github.io/zoomwebbrowser/img/text-e.png)
-![text]( https://qurihara.github.io/zoomwebbrowser/img/text.png)
-![chart]( https://qurihara.github.io/zoomwebbrowser/img/chart.png)
-![browse]( https://qurihara.github.io/zoomwebbrowser/img/browse.png)
-
-<img src="https://qurihara.github.io/zoomwebbrowser/img/text-e.png" height=320>
-<img src="https://qurihara.github.io/zoomwebbrowser/img/text.png" height=320>
-<img src="https://qurihara.github.io/zoomwebbrowser/img/chart.png" height=320>
-<img src="https://qurihara.github.io/zoomwebbrowser/img/browse.png" height=320>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/text-e.png" height=200>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/text.png" height=200>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/chart.png" height=200>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/browse.png" height=200>
 
 English description is below.
 
