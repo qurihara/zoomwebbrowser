@@ -16,7 +16,7 @@ Zoomは会議のホストなら画面共有によってどんなものでも写�
 
 リモートワークでZoomを使う機会が増えました。皆さん快適なビデオチャットライフを。  VS_COVID19
 
-### 追記：任意のwindowのスクリーンショットを取ってzoomの背景にするスクリプトも追加しました。いきなりwebブラウザのコンセプトから外れてすみません！
+### 追記：任意のwindowのスクリーンショットを取ってzoomの背景にするスクリプトzoomscreenshot.shも追加しました。いきなりwebブラウザのコンセプトから外れてすみません！
 
 課題・TODOs：
 * 更新するときキーボード入力をシステムが代行してキーボードショートカットを発動しているので、その間ユーザのキーボード操作が邪魔される
@@ -37,7 +37,7 @@ It works on mac terminals.
 
 VS_COVID19
 
-## How to use 使い方
+## How to use 使い方　（written in both English and Japanese)
 
 Make sure that the Chrome browser is installed in your mac.　Chromeブラウザがインストールされていることを確認してください。
 
@@ -80,7 +80,7 @@ Display a website:　好きなウェブサイトを背景として表示しま�
 
 $ ./zoomwebbrowser.sh https://www.unryu.org/
 
-Display a chart and refresh every 10 seconds:　グラフを表示するウェブサイトを背景として、10秒おきに更新します。
+Display a chart and refresh every 10 seconds:　グラフを表示するウェブサイトを背景として、10秒おきに更新します：
 
 $ ./zoomwebbrowser.sh https://www.chartjs.org/samples/latest/charts/doughnut.html 10
 
