@@ -88,9 +88,9 @@ You can also take a screenshot of any window on your local PC and apply it as a 
 
 $ ./zoomscreenshot.sh
 
-In addition, you can register a keyboard shortcut for this script using Automator: さらにAutomatorでこのようにクイックアクションを登録すると、キーボードショートカットでスナップショットをすぐzoomに送れるようになるよ！（というようなデモがzoomですぐできるよ！）:
+In addition, you can register a keyboard shortcut for this script using Automator: さらにAutomatorでこのようにクイックアクションを登録すると、キーボードショートカットでスナップショットをすぐzoomに送れるようになります！（というようなデモがzoomですぐできます！）:
 
-<img src="https://qurihara.github.io/zoomwebbrowser/img/automator.png" height=200>
+<img src="https://qurihara.github.io/zoomwebbrowser/img/automator.jpg" height=200>
 
 参考URL:https://nnnamani.hateblo.jp/entry/2015/02/08/133957
 
