@@ -37,9 +37,11 @@ It works on mac terminals.
 
 VS_COVID19
 
-## How to use
+## How to use 使い方
 
-Make sure that the Chrome browser is installed in your mac.
+Make sure that the Chrome browser is installed in your mac.　Chromeブラウザがインストールされていることを確認してください。
+
+Do this in a terminal. ターミナルで以下を実行してください。
 
 $ git clone https://github.com/qurihara/zoomwebbrowser.git
 
@@ -47,30 +49,28 @@ $ cd zoomwebbrowser
 
 $ brew install fswatch
 
-Do the following proccess once.
+Do the following proccess once. 以下を一度だけ実行してください。
 
 $ ./init.sh
 
 Then run zoom.us and add "example.jpeg" in this folder as a virtual background. Do not edit the existing backgrounds.
-This process tells the system the full path of the back ground image used in zoom.us.
+This process tells the system the full path of the back ground image used in zoom.us.　そしてzoom.usを立ち上げ、このフォルダの中にあるexample.jpegをバーチャル背景として追加してください。すでにあるバーチャル背景画像はいじらないでください。このプロセスにより、システムは現在選択されているバーチャル背景の画像のフルパスを知ることができます。
 
-Then run the system during a meeting when your video is on by:
+Then run the system during a meeting when your video is on by:　zoomミーティング中でビデオがOnになっている時、以下を実行します。
 
 $ ./zoomwebbrowser.sh (url)
 
-It takes a snapshot of (url) and refreshes your background with it. This is one time command.
-Give a permission to the scripts when asked.
+It takes a snapshot of (url) and refreshes your background with it. This is one time command. Give a permission to the scripts when asked. これにより(url)で指定されたwebサイトのスナップショットがzoomの背景になります。もし実行権限がないと警告されたら、権限を付与してください。
 
-Or
+Or　あるいは
 
 $ ./zoomwebbrowser.sh (url) (seconds-to-refresh)
 
-It takes a snapshot of (url) and refreshes your background with it every (seconds-to-refresh) seconds.
-Give a permission to the scripts when asked.
-I think you need at least 10 seconds or so for each refresh. Otherwise You'll get annoyed.
-Press ctrl+c to stop.
+It takes a snapshot of (url) and refreshes your background with it every (seconds-to-refresh) seconds. Give a permission to the scripts when asked. これにより(url)で指定されたwebサイトのスナップショットがzoomの背景になります。さらに(seconds-to-refresh)秒ごとにブラウザをリロードして背景の更新を繰り返します。もし実行権限がないと警告されたら、権限を付与してください。
 
-Examples:
+I think you need at least 10 seconds or so for each refresh. Otherwise You'll get annoyed. Press ctrl+c to stop. 
+
+Examples: 
 
 Display "I agree👍". You can rewrite any text with a parameter t in the url:
 
