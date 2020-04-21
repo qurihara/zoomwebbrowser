@@ -16,6 +16,8 @@ Zoomは会議のホストなら画面共有によってどんなものでも写�
 
 リモートワークでZoomを使う機会が増えました。皆さん快適なビデオチャットライフを。  VS_COVID19
 
+追記：任意のwindowのスクリーンショットを取ってzoomの背景にするスクリプトも追加しました。いきなりwebブラウザのコンセプトから外れてすみません！
+
 課題・TODOs：
 * 更新するときキーボード入力をシステムが代行してキーボードショートカットを発動しているので、その間ユーザのキーボード操作が邪魔される
 * Chromeのスナップショット取得の縦横比が適当
@@ -81,6 +83,10 @@ $ ./zoomwebbrowser.sh https://www.unryu.org/
 Display a chart and refresh every 10 seconds:
 
 $ ./zoomwebbrowser.sh https://www.chartjs.org/samples/latest/charts/doughnut.html 10
+
+You can also take a screenshot of any window on your local PC and apply it as a zoom background:
+
+$ ./zoomscreenshot.sh
 
 # Special Thanks
 
