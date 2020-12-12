@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div id="text" style='font-size:256px;font-weight:bold;'></div>
+<script>
+function getUrlVars() {
+        var vars = [],
+          max = 0,
+          hash = "",
+          array = "";
+        var url = window.location.search;
+
+        hash = url.slice(1).split("&");
+        max = hash.length;
+        for (var i = 0; i < max; i++) {
+          array = hash[i].split("=");
+          vars.push(array[0]);
+          vars[array[0]] = decodeURI(array[1]);
+        }
+        return vars;
+      }
+
+window.onload = function() {
+        para = getUrlVars();
+        t = para["t"];
+        console.log(t);
+        if (t !== undefined) {
+          document.getElementById("text").innerHTML = t;
+        }
+        t = para["bg"];
+        console.log(bg);
+        if (bg !== undefined) {
+          document.body.style.backgroundImage = bg;
+        }
+      };
+</script>
+</body>
+</html>
