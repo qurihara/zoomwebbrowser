@@ -42,7 +42,7 @@ window.onload = function() {
         bg = para["bg"];
         console.log(bg);
         if (bg !== undefined) {
-          document.body.style.backgroundImage = URL(bg);
+          document.body.style.backgroundImage = new URL(bg);
         }
       };
 </script>
