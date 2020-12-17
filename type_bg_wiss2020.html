@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body background="wiss2020logo_chatchair.png">
+<div id="text" style='
+        color:#ffff00;
+        font-size:256px;
+        font-weight:bold;
+        text-shadow    :
+       2px  2px 1px #003366,
+      -2px  2px 1px #003366,
+       2px -2px 1px #003366,
+      -2px -2px 1px #003366,
+       2px  0px 1px #003366,
+       0px  2px 1px #003366,
+      -2px  0px 1px #003366,
+       0px -2px 1px #003366; '></div>
+<script>
+function getUrlVars() {
+        var vars = [],
+          max = 0,
+          hash = "",
+          array = "";
+        var url = window.location.search;
+
+        hash = url.slice(1).split("&");
+        max = hash.length;
+        for (var i = 0; i < max; i++) {
+          array = hash[i].split("=");
+          vars.push(array[0]);
+          vars[array[0]] = decodeURI(array[1]);
+        }
+        return vars;
+      }
+
+window.onload = function() {
+        para = getUrlVars();
+        t = para["t"];
+        console.log(t);
+        if (t !== undefined) {
+          document.getElementById("text").innerHTML = t;
+        }
+        // bg = para["bg"];
+        // console.log(bg);
+        // if (bg !== undefined) {
+        //   document.body.style.backgroundImage = new URL(bg);
+        // }
+      };
+</script>
+</body>
+</html>
